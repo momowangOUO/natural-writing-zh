@@ -1,0 +1,6 @@
+interface:
+  display_name: "中文写作校准"
+  short_description: "按语境校准六类中文文案，兼顾专业与自然；游戏文本先独立成稿再接入项目"
+  default_prompt: "使用 $natural-writing-zh，按读者、文体和上下文撰写或修改内容；涉及游戏实现时先完成纯文本，再接入并核对。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,13 @@
+{
+  "nodes": {
+    "need_stones": {"speaker": "西洛", "condition": "stones < 3", "text": "还差{missing}枚。", "next": "leave"},
+    "leave": {"speaker": "PLAYER_CHOICE", "text": "离开", "next": "goodbye"},
+    "goodbye": {"speaker": "西洛", "text": "再见。", "next": null},
+    "enough": {"speaker": "西洛", "condition": "stones >= 3", "text": "月石收齐了。", "action": "unlock_tower"}
+  },
+  "ui": {
+    "overwrite": {"title": "保存", "body": "覆盖当前手动存档，自动存档保留。", "confirm": "确定", "cancel": "取消"},
+    "stones": "月石：{count}/3",
+    "load": "读取存档"
+  }
+}
